@@ -10,7 +10,7 @@ class induk{
 }
 class depan extends induk{
     void posisi(){
-        System.out.println("depan/belakang");
+        System.out.println("depan/belakang.");
     }
 }
 class tengah extends induk{
