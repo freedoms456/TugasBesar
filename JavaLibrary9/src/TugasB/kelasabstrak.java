@@ -6,13 +6,13 @@
 package TugasB;
 
 public abstract class kelasabstrak {
-    abstract void inputa();
-        abstract void inputb();
-           abstract void inputc();
-               abstract void inputd();
-                   abstract void inpute();
-                       abstract void inputf();
-                           abstract void inputg();
+    abstract void Inputa();
+        abstract void Inputb();
+           abstract void Inputc();
+               abstract void Inputd();
+                   abstract void Inpute();
+                       abstract void Inputf();
+                           abstract void Inputg();
         
     
 }
