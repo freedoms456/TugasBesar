@@ -41,8 +41,8 @@ public class datakelas extends Input{
          
          
          public void HasilKeamanann(){
-               setHasilKeamanan( getKekokohan()+ getKuncipintudanjendela()+ getBahaya());
-             if( getHasilKeamanan()>6){
+               l.setHasilKeamanan( l.getKekokohan()+ l.getKuncipintudanjendela()+ l.getBahaya());
+             if( l.getHasilKeamanan()>6){
                  System.out.println("Keamanan kelas yang baik");
             
            }
@@ -54,14 +54,14 @@ public class datakelas extends Input{
          }
          public void HasilIdentitass(){
      
-             System.out.println("Nama Ruang :" + getNamaRuang());
-             System.out.println("Lokasi Ruang berada di GKB: " + getLokasiRuang());
-             System.out.println("Ruang berada di Fakultas: " + getFakultas());
+             System.out.println("Nama Ruang :" + l.getNamaRuang());
+             System.out.println("Lokasi Ruang berada di GKB: " + l.getLokasiRuang());
+             System.out.println("Ruang berada di Fakultas: " + l.getFakultas());
           
          }
          public int HasilKondisii(){
-              setHasilKondisi(  getJumlahJendela()+ getPanjangRuang()+ getLebarRuang()+ getJumlahKursi()+ getJumlahPintu());
-   if( getHasilKondisi() >8){
+              l.setHasilKondisi(  l.getJumlahJendela()+ l.getPanjangRuang()+ l.getLebarRuang()+ l.getJumlahKursi()+ l.getJumlahPintu());
+   if( l.getHasilKondisi() >8){
        System.out.print("Kondisi kelas yang Baik");
        return 1;
    }
@@ -73,10 +73,10 @@ public class datakelas extends Input{
          
          }
          public void HasilJumlah(){
-              setHasilJumlahKondisi( getJumlahSteker()+ getKondisiSteker()+ getPosisiSteker()+ getJumlahLCD()
-            + getKondisiLCD()+ getJumlahLampu()+ getKondisiLampu()+ getKondisiKipasAngin()+ getJumlahKipasAngin()
-            + getJumlahAC()+ getKondisiAC()+ getBandWith()+ getJumlahCCTV()+ getKondisiCCTV());
-            if( getHasilJumlahKondisi()>27){
+              l.setHasilJumlahKondisi( l.getJumlahSteker()+ l.getKondisiSteker()+ l.getPosisiSteker()+ l.getJumlahLCD()
+            + l.getKondisiLCD()+ l.getJumlahLampu()+ l.getKondisiLampu()+ l.getKondisiKipasAngin()+ l.getJumlahKipasAngin()
+            + l.getJumlahAC()+ l.getKondisiAC()+ l.getBandWith()+ l.getJumlahCCTV()+ l.getKondisiCCTV());
+            if( l.getHasilJumlahKondisi()>27){
                 System.out.println("Jumlah,Kondisi,dan posisi sarana dan prasarana Kelas yang Baik");
             }  
             else{
@@ -85,8 +85,8 @@ public class datakelas extends Input{
              
          }
          public void HasilLingkungann(){
-                setHasilLingkungan( getKondisiLantai()+ getKondisiDinding()+ getKondisiAtap()+ getKondisiPintu()+ getKondisiJendela());
-             if( getHasilLingkungan()>9){
+                l.setHasilLingkungan( l.getKondisiLantai()+ l.getKondisiDinding()+ l.getKondisiAtap()+ l.getKondisiPintu()+ l.getKondisiJendela());
+             if( l.getHasilLingkungan()>9){
                  System.out.println("Lingkungan kelas yang Baik");
              }
              else{
@@ -95,8 +95,8 @@ public class datakelas extends Input{
              
          }
          public void HasilKebersihann(){
-                setHasilKebersihan( getSirkulasiUdara()+ getNilaiPencahayaan()+ getKelembapan()+ getSuhu());
-             if( getHasilKebersihan()>9){
+                l.setHasilKebersihan( l.getSirkulasiUdara()+ l.getNilaiPencahayaan()+ l.getKelembapan()+ l.getSuhu());
+             if( l.getHasilKebersihan()>9){
                  System.out.println("Kebersihan kelas yang Baik");
                  
              }
@@ -105,8 +105,8 @@ public class datakelas extends Input{
              }
          }
          public void HasilKenyamanann(){
-               setHasilKenyamanan( getKebisingan()+ getBau()+ getKebocoran()+ getKerusakan() +  getKeausan());
-         if( getHasilKenyamanan()>9){
+               l.setHasilKenyamanan( l.getKebisingan()+ l.getBau()+ l.getKebocoran()+ l.getKerusakan() +  l.getKeausan());
+         if( l.getHasilKenyamanan()>9){
              System.out.println("Kenyamanan kelas yang Baik");
          }
          else{
