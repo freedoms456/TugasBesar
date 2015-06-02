@@ -60,17 +60,18 @@ public class Sarana extends kelasabstrak{
             + l.getKondisiLCD()+ l.getJumlahLampu()+ l.getKondisiLampu()+ l.getKondisiKipasAngin()+ l.getJumlahKipasAngin()
             + l.getJumlahAC()+ l.getKondisiAC()+ l.getBandWith()+ l.getJumlahCCTV()+ l.getKondisiCCTV());
             if( l.getHasilJumlahKondisi()>27){
-                System.out.println("Jumlah,Kondisi,dan posisi sarana dan prasarana Kelas yang Baik");
+                System.out.println(" Baik");
             }  
             else{
-                System.out.println("Jumlah,Kondisi,dan posisi sarana dan prasarana Kelas yang Buruk");
+                System.out.println("Buruk");
             }
             return 1;
     }
     
     @Override
     void Output(){
-        System.out.print("Memiliki Sarana yang :");
+     
+            System.out.print("Sarana kelas = ");  
         Analisis();
     }
     
