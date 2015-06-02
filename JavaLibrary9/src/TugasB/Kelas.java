@@ -407,7 +407,7 @@ public class Kelas {
     public int getKekokohan(){
         return Kekokohan;
     }
-     public void setKuncipintudanjendela(int Kuncipintudanjendela){
+    public void setKuncipintudanjendela(int Kuncipintudanjendela){
         this.Kuncipintudanjendela= Kuncipintudanjendela;
 }
     

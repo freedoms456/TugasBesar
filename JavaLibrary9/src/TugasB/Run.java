@@ -14,14 +14,16 @@ public class Run  {
     
     
 		public static void main (String[] args){
-		datakelas  kelasA = new datakelas();
+		Kenyamananruangkelas  kelasA = new Kenyamananruangkelas();
                 Input  kelasAa = new Input();
              
 		
 		
 		
-			kelasA.Input();
-                        kelasA.Output();
+		
+                        kelasAa.Inputb();
+                       
+                       
 			
                 }
         }

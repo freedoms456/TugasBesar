@@ -21,10 +21,10 @@ class tengah extends induk{
 
       
 public class Input extends kelasabstrak {
-      Scanner input;
-      induk d = new depan();
-      Kelas a = new Kelas();
-              induk t=new tengah();
+        Scanner input;
+        induk d = new depan();
+        Kelas a = new Kelas();
+        induk t = new tengah();
     
       public void Inputa(){
   
