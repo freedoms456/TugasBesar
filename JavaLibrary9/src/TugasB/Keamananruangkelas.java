@@ -5,6 +5,7 @@
  */
 package TugasB;
 
+import java.io.FileWriter;
 import java.util.Scanner;
 
 /**
@@ -34,5 +35,12 @@ public class Keamananruangkelas {
         }   
         return 1;
     }
-    
+    void Save(){
+        try{
+            FileWriter a = new FileWriter("Keamanan.txt");
+            a.write("Kondisi kelas: " + Analisis());
+        }catch(Exception a){
+            a.printStackTrace();
+        }
+    }
 }

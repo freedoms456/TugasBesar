@@ -5,6 +5,7 @@
  */
 package TugasB;
 
+import java.io.FileWriter;
 import java.util.Scanner;
 
 /**
@@ -13,9 +14,9 @@ import java.util.Scanner;
  */
 public abstract class Jumlahkondisidanposisisarana extends kelasabstrak{
     Scanner input;
-    induk d = new depan();
+    
     Kelas a = new Kelas();
-    induk t = new tengah();
+ 
     
     public void input(){
         input= new Scanner (System.in);
@@ -35,15 +36,15 @@ public abstract class Jumlahkondisidanposisisarana extends kelasabstrak{
         a.setJumlahLampu(input.nextInt())  ;
         System.out.println("Pilih Kondisi Lampu : 1.buruk 2.Bagus");
         a.setKondisiLampu(input.nextInt());
-        System.out.print("pilih Posisi Lampu :1.pinggir");
-        System.out.print("2");t.posisi();
+        System.out.print("pilih Posisi Lampu :1.pinggir 2.tengah");
+    
              
         a.setPosisiLampu(input.nextInt());
         System.out.println("pilih Jumlah Kipas Angin : 1.0 2.1-2 3.>2");
         a.setJumlahKipasAngin(input.nextInt())  ;
         System.out.println("Pilih Kondisi Kipas Angin : 1.buruk 2.Bagus");
         a.setKondisiKipasAngin(input.nextInt());
-        System.out.println("pilih Posisi Kipas Angin :1.pinggir 2.");t.posisi();
+        System.out.println("pilih Posisi Kipas Angin :1.pinggir 2.tengah");
         a.setPosisiKipasAngin(input.nextInt());
         System.out.println("pilih Jumlah AC : 1.0 2.1 3.>1");
         a.setJumlahAC(input.nextInt())  ;
@@ -60,9 +61,8 @@ public abstract class Jumlahkondisidanposisisarana extends kelasabstrak{
         System.out.println("Pilih Kondisi CCTV : 1.buruk 2.Bagus");
         a.setKondisiCCTV(input.nextInt());
               
-        System.out.print("pilih posisi: 1. ");t.posisi();
-        System.out.println(" ");
-        System.out.print("            : 2. ");d.posisi();
+        System.out.print("pilih posisi: 1.tengah 2.depan");
+      
         a.setPosisiCCTV(input.nextInt());
     }
     int Analisis(){
@@ -78,5 +78,13 @@ public abstract class Jumlahkondisidanposisisarana extends kelasabstrak{
     }
     void Output(){
         System.out.println("Kondisi kelas: "+ Analisis());
+    }
+    void Save(){
+        try{
+            FileWriter a = new FileWriter(".txt");
+            a.write("Kondisi kelas: " + Analisis());
+        }catch(Exception a){
+            a.printStackTrace();
+        }
     }
 }

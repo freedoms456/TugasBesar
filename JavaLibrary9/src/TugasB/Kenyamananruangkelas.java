@@ -47,18 +47,13 @@ public class Kenyamananruangkelas {
         Analisis();
         
     }
-    
-    public void Save(){
+   
+    void Save(){
         try{
-           FileWriter Writer = new FileWriter("Kenyamanan.txt");
-           Writer.write("Kebisingan Ruangan = " +a.getKebisingan()+"\t");
-           Writer.write("Bau Ruangan = " + a.getBau()+"\t");
-           Writer.write("Kebocoran Ruangan= " + a.getKebocoran()+"\t");
-           Writer.write("Kerusakan Ruangan= " + a.getKerusakan()+"\t");
-           Writer.write("Keausan Ruangan= " + a.getKeausan()+"\t");
-           Writer.close();
-         }catch(IOException ex){
-             ex.printStackTrace();
-         }
+            FileWriter a = new FileWriter("Kenyamanan.txt");
+            a.write("Kondisi kelas: " + Analisis());
+        }catch(Exception a){
+            a.printStackTrace();
+        }
     }
 }

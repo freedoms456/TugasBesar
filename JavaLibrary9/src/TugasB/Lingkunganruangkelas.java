@@ -5,6 +5,7 @@
  */
 package TugasB;
 
+import java.io.FileWriter;
 import java.util.Scanner;
 
 /**
@@ -40,5 +41,13 @@ public abstract class Lingkunganruangkelas extends kelasabstrak{
     }
     void Output(){
         System.out.println("Kondisi kelas: "+ Analisis());
+    }
+    void Save(){
+        try{
+            FileWriter a = new FileWriter("Lingkungan.txt");
+            a.write("Kondisi kelas: " + Analisis());
+        }catch(Exception a){
+            a.printStackTrace();
+        }
     }
 }

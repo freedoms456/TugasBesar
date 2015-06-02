@@ -5,6 +5,7 @@
  */
 package TugasB;
 
+import java.io.FileWriter;
 import java.util.Scanner;
 
 /**
@@ -39,5 +40,13 @@ public abstract class Identitasruangkelas extends kelasabstrak{
     void Output(){
         System.out.println("Kondisi kelas: " + Analisis());
         
+    }
+    void Save(){
+        try{
+            FileWriter a = new FileWriter("Identitas.txt");
+            a.write("Kondisi kelas: " + Analisis());
+        }catch(Exception a){
+            a.printStackTrace();
+        }
     }
 }

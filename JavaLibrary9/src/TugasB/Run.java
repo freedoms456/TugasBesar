@@ -15,13 +15,13 @@ public class Run  {
     
 		public static void main (String[] args){
 		Kenyamananruangkelas  kelasA = new Kenyamananruangkelas();
-                Input  kelasAa = new Input();
+                Input  kelasA = new Input();
              
 		
 		
 		
 		
-                        kelasAa.Inputb();
+                        kelasA.Inputb();
                        
                        
 			
